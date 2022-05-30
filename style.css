@@ -1,64 +1,60 @@
-/* Basic Style */
-.body {
-    background-color: #f8f8f8;
-    color: #333;
-    font-family: Lato, sans-serif;
 }
-
-input,button{
-    outline:none;
+.container {
+    display: block;
+    width: 500px;
+    margin: 0 auto ;
 }
 .matrix {
-    width: 500px;
-    margin: 0 auto;
-    display: block;
     text-align: right;
 }
+
 .matrix-img {
     width: 100%;
 }
-.matrix-link{
+.matrix-link {
     font-family: fantasy, cursive;
 }
 
-@media (max-width:768px) {
-.matrix { text-align: center;
-}
+@media (max-width: 768px) {
+
+    .matrix { text-align: center;
+  }
+
 }
 
-.main-content {
-    display: block;
-    width: 500px;
-    margin: 0 auto 0;
-}
+
 .task {
     width: 56%;
     display: inline-block;
-    flex-grow: 1
+    flex-grow: 1;
 }
+
 .task-row-wrapper {
     display: flex;
 }
+
 .task-list {
-    margin:0;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 
 .btn {
     background: none;
-    border: 0px;
+    border: 0;
     color: #888;
     font-size: 15px;
     width: 60px;
     font-family: Lato, sans-serif;
     cursor: pointer;
 }
+
 .btn:hover {
     color: #3a3A3a;
 }
 /* Heading */
-.tittle{
+
+.tittle {
     color: #333;
     font-weight: 700;
     font-size: 15px;
@@ -71,7 +67,6 @@ input,button{
 
 
 .input-text {
-    margin: 0;
     font-size: 18px;
     line-height: 18px;
     height: 21px;
@@ -82,12 +77,14 @@ input,button{
     font-family: Lato, sans-serif;
     color: #888;
 }
+
 .input-text:focus {
     color: #333;
 }
 
 /* New Task */
-.new-task-label{
+
+.new-task-label {
     display: block;
     margin: 0 0 20px;
     color: #333;
@@ -100,6 +97,7 @@ input,button{
 
 
 /* Task list */
+
 .list-item {
     overflow: hidden;
     padding: 20px 0;
@@ -107,8 +105,9 @@ input,button{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    list-style:none;
+    list-style: none;
 }
+
 .list-item > * {
     vertical-align: middle;
 }
@@ -116,6 +115,7 @@ input,button{
 .checkbox {
     margin: 0 10px;
 }
+
 .task {
     padding-left: 10px;
     box-sizing: border-box;
@@ -126,13 +126,15 @@ input,button{
 .delite-img {
     height: 2em;
     transform: rotateZ(45deg);
-    transition: transform 200ms ease-in;
+    transition:  transform 200ms ease-in;
 }
+
 .delite-img:hover {
     transform: rotateZ(0);
 }
 
 /* Completed */
+
 .task-list#completed-tasks label {
     text-decoration: line-through;
     color: #888;
@@ -140,14 +142,14 @@ input,button{
 
 /* Edit Task */
 .task-list  input[type=text] {
-    display:none
+    display: none;
 }
 
 li.edit-mode input[type=text] {
-    display:inline-block;
-    width:224px
+    display: inline-block;
+    width: 224px;
 }
 
 ul li.edit-mode label {
-    display:none;
+    display: none;
 }
