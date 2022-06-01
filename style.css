@@ -1,17 +1,27 @@
+/* Basic Style */
+.body {
+    background-color: #f8f8f8;
+    color: #333;
+    font-family: Lato, sans-serif;
+}
+
+input,
+button {
+    outline: none;
 }
 .container {
     display: block;
     width: 500px;
     margin: 0 auto ;
 }
-.matrix {
+.header {
     text-align: right;
 }
 
-.matrix-img {
+.header-img {
     width: 100%;
 }
-.matrix-link {
+.header-link {
     font-family: fantasy, cursive;
 }
 
@@ -84,7 +94,7 @@
 
 /* New Task */
 
-.new-task-label {
+.new-task-titlle {
     display: block;
     margin: 0 0 20px;
     color: #333;
